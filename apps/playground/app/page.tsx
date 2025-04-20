@@ -1,8 +1,8 @@
 "use client";
 
 import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui";
 import styles from "./page.module.css";
+import { Button } from "@repo/ui";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -59,7 +59,9 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="web">Open alert</Button>
+        <Button appName="web" className="123">
+          Open alert?
+        </Button>
       </main>
       <footer className={styles.footer}>
         <a

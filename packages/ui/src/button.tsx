@@ -2,6 +2,8 @@
 
 import { type PropsWithChildren } from "react";
 
+import { button } from "./button.css";
+
 type ButtonProps = PropsWithChildren<{
   className?: string;
   appName: string;
@@ -9,7 +11,7 @@ type ButtonProps = PropsWithChildren<{
 
 export function Button({ children, className, appName }: ButtonProps) {
   return (
-    <button className={className} onClick={() => alert(`Hello from your ${appName} app!`)}>
+    <button className={button + " " + className} onClick={() => alert(`Hello from your ${appName} app!`)}>
       {children}
     </button>
   );
