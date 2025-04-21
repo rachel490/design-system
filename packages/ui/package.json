@@ -4,16 +4,19 @@
   "private": true,
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "dist/ui.css"
   ],
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
+  "style": "dist/ui.css",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
-    }
+    },
+    "./style": "./dist/ui.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
